@@ -15,8 +15,6 @@ var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.connectToDatabase = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
-const dotenv_1 = __importDefault(require("dotenv"));
-dotenv_1.default.config();
 const MONGODB_URI = (_a = process.env.MONGODB_URI) !== null && _a !== void 0 ? _a : "mongodb://localhost:27017";
 function connectToDatabase() {
     return __awaiter(this, void 0, void 0, function* () {
